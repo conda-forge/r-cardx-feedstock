@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cardx_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cardx/cardx_{{ version }}.tar.gz
-  sha256: 789b3a4637e7a04ea508ff8ff759e6a58ebea722d89b64afc5a7910542d5205c
+  sha256: bb1507ea1416ee700fd5ab716c519d55f714021d03adac374cf5b95b75a3584b
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cards >=0.2.2
+    - r-cards >=0.4.0
     - r-cli >=3.6.1
     - r-dplyr >=1.1.2
     - r-glue >=1.6.2
@@ -33,7 +33,7 @@ requirements:
     - r-tidyr >=1.3.0
   run:
     - r-base
-    - r-cards >=0.2.2
+    - r-cards >=0.4.0
     - r-cli >=3.6.1
     - r-dplyr >=1.1.2
     - r-glue >=1.6.2
