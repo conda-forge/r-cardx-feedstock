@@ -30,7 +30,7 @@ requirements:
     - r-base
     - r-cards >=0.7.0
     - r-cli >=3.6.1
-    - r-dplyr >=1.1.2
+    - r-dplyr >=1.2.0
     - r-glue >=1.6.2
     - r-lifecycle >=1.0.3
     - r-rlang >=1.1.1
@@ -39,7 +39,7 @@ requirements:
     - r-base
     - r-cards >=0.7.0
     - r-cli >=3.6.1
-    - r-dplyr >=1.1.2
+    - r-dplyr >=1.2.0
     - r-glue >=1.6.2
     - r-lifecycle >=1.0.3
     - r-rlang >=1.1.1
