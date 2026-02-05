@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cardx_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cardx/cardx_{{ version }}.tar.gz
-  sha256: cc5754a585ae85edaa8c59fa32d608a402471c60a7ec92d8f4f5e9b9d71d635d
+  sha256: cbac390697d9c8b8c38ca8975aa03772d6fd7b65ceb5f2806558debf8988f080
 
 build:
   number: 0
