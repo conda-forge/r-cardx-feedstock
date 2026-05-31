@@ -3,11 +3,13 @@ About r-cardx-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cardx-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/insightsengineering/cardx
+Home: https://insightsengineering.github.io/cardx/
 
 Package license: Apache-2.0
 
 Summary: Create extra Analysis Results Data (ARD) summary objects. The package supplements the simple ARD functions from the 'cards' package, exporting functions to put statistical results in the ARD format. These objects are used and re-used to construct summary tables, visualizations, and written reports.
+
+Development: https://github.com/insightsengineering/cardx
 
 Current build status
 ====================
