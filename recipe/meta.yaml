@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cardx_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cardx/cardx_{{ version }}.tar.gz
-  sha256: cbac390697d9c8b8c38ca8975aa03772d6fd7b65ceb5f2806558debf8988f080
+  sha256: 44e2509ff9f36d49012b6606dce9d717393254af58a05555f3e5a950169ec9fe
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cards >=0.7.0
+    - r-cards >=0.8.0
     - r-cli >=3.6.1
     - r-dplyr >=1.2.0
     - r-glue >=1.6.2
@@ -37,7 +37,7 @@ requirements:
     - r-tidyr >=1.3.0
   run:
     - r-base
-    - r-cards >=0.7.0
+    - r-cards >=0.8.0
     - r-cli >=3.6.1
     - r-dplyr >=1.2.0
     - r-glue >=1.6.2
@@ -51,7 +51,8 @@ test:
     - "\"%R%\" -e \"library('cardx')\""  # [win]
 
 about:
-  home: https://github.com/insightsengineering/cardx
+  home: https://insightsengineering.github.io/cardx/
+  dev_url: https://github.com/insightsengineering/cardx
   license: Apache-2.0
   summary: Create extra Analysis Results Data (ARD) summary objects. The package supplements the simple ARD functions from the 'cards' package, exporting functions to put statistical results in the ARD format. These objects are used and re-used to construct summary tables, visualizations, and written reports.
   license_family: APACHE
